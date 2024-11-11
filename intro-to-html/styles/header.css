@@ -1,0 +1,15 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+}
+.left section{
+    width:150px;
+}
+.middle-section{
+    flex: 1;
+}
+.right-section{
+    width
+
+}
