@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <form id="gradeForm">
+        <label for="marks">Enter your marks</label>
+          <input type="number" id="marks" required>
+          <button type="submit">Calculate Grade </button>
+          </form>
+          <div>
+            <p id="result"></p>
+          </div>
+    <script>
+        function check_grade(event){
+            event.preventDefaut()
+            let marks= document.getElementById('marks').value
+               if (marks>40)
+                grade= 'E'
+            else if(marks >50)
+                grade= 'D'
+            else if(marks >60)
+                grade= 'C'
+            else if(marks >70)
+                grade= 'B'
+            else if(marks >80)
+                grade= 'A'
+            else 
+                grade= 'Invalid marks'
+
+            }
+            const results=document.getElementById('results')
+            results.innerHTML ='<p> Your grade is  ${grade}<p>'
+        
+    </script>
+</body>
+</html>
